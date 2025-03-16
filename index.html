@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake PhonePay - Secure Payments</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #000000, #434343);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            perspective: 1000px;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transform: translateZ(20px);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1) translateZ(30px);
+        }
+        .btn-green {
+            background: #28a745;
+            color: #fff;
+        }
+        .btn-green:hover {
+            background: #218838;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+            transform: rotateY(10deg);
+        }
+        .feature:hover {
+            transform: scale(1.05) rotateY(0deg);
+        }
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fake PhonePay</h1>
+    </header>
+    
+    <section id="home">
+        <h2>Fast & Secure Payments</h2>
+        <p>Experience seamless transactions with Fake PhonePay.</p>
+        <a href="#features" class="btn">Learn More</a>
+    </section>
+    
+    <section id="features">
+        <h2>Why Choose Fake PhonePay?</h2>
+        <div class="feature">
+            <h3>Screen Shots Proofs</h3>
+            <p>View transaction proof screenshots for verification.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure Payments</h3>
+            <p>End-to-end encryption ensures your transactions are safe.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Join Our Telegram Channel</h2>
+        <p>Get updates and support by joining our Telegram channel.</p>
+        <a href="https://t.me/fakephonepay007" class="btn btn-green" target="_blank">Join Now</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Fake PhonePay. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btns = document.querySelectorAll(".btn");
+            btns.forEach(btn => {
+                btn.addEventListener("mouseover", () => {
+                    btn.style.transform = "scale(1.1) translateZ(30px)";
+                });
+                btn.addEventListener("mouseout", () => {
+                    btn.style.transform = "scale(1) translateZ(20px)";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
